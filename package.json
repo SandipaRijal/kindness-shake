@@ -1,0 +1,66 @@
+{
+	"name": "next-simple-starter",
+	"private": true,
+	"version": "3.0.0",
+	"repository": {
+		"url": "https://github.com/ooade/NextSimpleStarter"
+	},
+	"engines": {
+		"node": ">=10.0.0"
+	},
+	"license": "MIT",
+	"eslintConfig": {
+		"extends": "react-app"
+	},
+	"scripts": {
+		"dev": "next",
+		"start": "next start",
+		"lint": "eslint components",
+		"build": "next build",
+		"build:server": "NEXT_TARGET=server next build",
+		"export:server": "NEXT_TARGET=server next export",
+		"export": "npm run build:server && npm run export:server",
+		"start:static": "serve",
+		"now-build": "next build"
+	},
+	"dependencies": {
+		"@ant-design/compatible": "^1.0.8",
+		"@ant-design/icons": "^4.5.0",
+		"@material-ui/core": "^4.11.0",
+		"@material-ui/icons": "^4.11.2",
+		"@material-ui/lab": "^4.0.0-alpha.57",
+		"antd": "^4.12.3",
+		"bootstrap": "^4.5.2",
+		"enquire-js": "^0.2.1",
+		"google-map-react": "^2.1.9",
+		"google-spreadsheet": "^3.1.15",
+		"leaflet": "^1.7.1",
+		"next": "^10.0.0",
+		"next-offline": "^5.0.2",
+		"rc-banner-anim": "^2.4.5",
+		"rc-queue-anim": "^1.8.5",
+		"rc-scroll-anim": "^2.7.6",
+		"rc-texty": "^0.2.0",
+		"rc-tween-one": "^2.7.3",
+		"react": "^16.13.1",
+		"react-axe": "^3.5.3",
+		"react-dom": "^16.13.1",
+		"react-instagram-embed": "^2.0.0",
+		"react-leaflet": "^3.1.0",
+		"react-tabs": "^3.2.1",
+		"reactstrap": "^8.9.0",
+		"sass": "^1.32.8"
+	},
+	"devDependencies": {
+		"babel-eslint": "^10.1.0",
+		"eslint": "^6.8.0",
+		"eslint-config-react-app": "^5.2.1",
+		"eslint-plugin-import": "^2.22.0",
+		"eslint-plugin-jsx-a11y": "^6.3.1",
+		"eslint-plugin-react": "^7.21.2",
+		"eslint-plugin-react-hooks": "^4.1.2",
+		"serve": "^11.3.2",
+		"typescript": "^4.0.3",
+		"prettier": "^1.19.1"
+	}
+}
